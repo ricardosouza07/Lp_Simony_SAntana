@@ -1,3 +1,8 @@
+'use client';
+
+import React from 'react';
+import { motion } from 'framer-motion';
+
 interface ScrollRevealProps extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode;
     variant?: 'fade' | 'up' | 'down' | 'left' | 'right';
