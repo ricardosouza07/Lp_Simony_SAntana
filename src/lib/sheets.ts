@@ -14,7 +14,7 @@ export async function appendToSheet(data: any[]) {
     try {
         const response = await sheets.spreadsheets.values.append({
             spreadsheetId: process.env.SHEETS_ID,
-            range: 'Sheet1!A:H',
+            range: 'A:H',
             valueInputOption: 'USER_ENTERED',
             requestBody: {
                 values: [data],
