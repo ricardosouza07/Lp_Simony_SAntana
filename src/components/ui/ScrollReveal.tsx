@@ -9,6 +9,7 @@ interface ScrollRevealProps extends React.HTMLAttributes<HTMLDivElement> {
     delay?: number;
     duration?: number;
     once?: boolean;
+    className?: string;
 }
 
 export const ScrollReveal = ({

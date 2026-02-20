@@ -85,14 +85,16 @@ export const EventInfo = () => {
                         </div>
                     </ScrollReveal>
 
-                    <ScrollReveal variant="up" delay={0.3} className="lg:col-span-2">
-                        <div className="card-gradient flex flex-col items-center text-center h-full">
-                            <MapPin className="w-10 h-10 text-primary mb-4" />
-                            <h4 className="text-sm uppercase tracking-widest text-text-secondary mb-2">Local</h4>
-                            <p className="text-lg font-bold leading-tight">Hotel Rockefeller by Slaviero Hotéis</p>
-                            <p className="text-sm text-text-secondary">R. Rockefeller, 11 – Rebouças, Curitiba – PR</p>
-                        </div>
-                    </ScrollReveal>
+                    <div className="lg:col-span-2">
+                        <ScrollReveal variant="up" delay={0.3}>
+                            <div className="card-gradient flex flex-col items-center text-center h-full">
+                                <MapPin className="w-10 h-10 text-primary mb-4" />
+                                <h4 className="text-sm uppercase tracking-widest text-text-secondary mb-2">Local</h4>
+                                <p className="text-lg font-bold leading-tight">Hotel Rockefeller by Slaviero Hotéis</p>
+                                <p className="text-sm text-text-secondary">R. Rockefeller, 11 – Rebouças, Curitiba – PR</p>
+                            </div>
+                        </ScrollReveal>
+                    </div>
                 </div>
 
                 <ScrollReveal variant="up" delay={0.5}>
