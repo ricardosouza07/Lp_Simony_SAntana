@@ -9,6 +9,7 @@ interface ScrollRevealProps {
     delay?: number;
     duration?: number;
     once?: boolean;
+    className?: string;
 }
 
 export const ScrollReveal = ({
@@ -16,7 +17,8 @@ export const ScrollReveal = ({
     variant = 'up',
     delay = 0,
     duration = 0.8,
-    once = true
+    once = true,
+    className = ''
 }: ScrollRevealProps) => {
     const variants = {
         fade: {
@@ -48,6 +50,7 @@ export const ScrollReveal = ({
             viewport={{ once }}
             transition={{ delay, duration, ease: [0.25, 0.1, 0.25, 1.0] }}
             variants={variants[variant]}
+            className={className}
         >
             {children}
         </motion.div>
