@@ -14,7 +14,7 @@ export const VideoBubble = () => {
                 initial={{ opacity: 0, scale: 0.5, y: 100 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ delay: 2, duration: 0.5, type: 'spring' }}
-                className="fixed bottom-24 left-6 z-40 hidden md:block" // Hidden on mobile if FooterCTA is active, or adjust position
+                className="fixed bottom-24 left-6 z-40"
             >
                 <button
                     onClick={() => setIsOpen(true)}
